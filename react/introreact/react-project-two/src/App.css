@@ -1,0 +1,10 @@
+.container{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ height: 80vh;
+ width: 100vw;
+ color:rgb(46, 75, 4);
+ /* background-color: brown; */
+ flex-direction: column;
+}

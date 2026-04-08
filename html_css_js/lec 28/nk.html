@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>  
+     
+    *
+    {
+
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+
+    }
+    .container
+          {
+              height: 100vh;
+              width : 100vw;
+              background-color: aqua;
+              display: grid;
+              grid-template-rows: 1fr 1fr 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 10px;
+              
+         
+
+           }
+       
+           .box1
+        {
+
+          grid-column-start: 1; 
+          grid-column-end: 4; 
+         
+        }  
+        .box6
+        {
+
+          grid-column-start: 1; 
+          grid-column-end: 4; 
+         
+        } 
+    
+        .box2
+        {
+
+          grid-row-start: 2; 
+          grid-row-end: 4; 
+         
+        } 
+    
+        .box3
+        {
+
+          grid-row-start: 2; 
+          grid-row-end: 4; 
+          grid-column-start: 3; 
+          grid-column-end: 4; 
+         
+        } 
+        .box
+          {
+             background-color: gray;
+             display: flex;
+             font-size: 40px;
+             text-shadow: 2px 2px 3px yellow;
+             justify-content: center;
+             align-items: center;
+
+          }
+
+
+    
+    
+
+        @media (max-width: 500px)
+         {
+
+            .container
+           {
+              display: grid;
+              background-color: aqua;
+              grid-template-rows: repeat(6, 1fr);
+              grid-template-columns: repeat(1, 1fr);
+         
+         
+           }
+      
+      
+      
+    
+          .box
+            {
+                
+                background-color: lightcoral;
+                color:#0b6880;
+                
+                
+             }
+
+            /* Reset custom placements */
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+ 
+     
+
+         }
+
+
+
+
+</style>
+</head>
+<body>
+       <div class=" container"> 
+        <div class = "box box1"> header </div>    
+        <div class = "box box2"> sidebar </div> 
+        <div class=" box box3"> sidebar </div> 
+        <div class="box box4"> box4 </div> 
+        <div class=" box"> box5 </div> 
+        <div class="box box6"> footer </div> 
+       
+       </div> 
+
+
+
+
+
+</body>
+</html>
